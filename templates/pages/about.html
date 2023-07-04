@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %} About {% endblock %}
+{% block content %}
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12 ">
+          <h1 class="display-4">About IN-NEED</h1>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{%url 'index'%}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>You get to find your perfect item </h2>
+          <p class="lead">Welcome to our website</p>
+          <img src="assets/img/about.jpg" alt="">
+          <p class="mt-4">Here we specialize in providing a platform for selling items 
+            that are nearing their expiry date. We understand that many consumers are looking for discounted 
+            products, and we're here to offer a solution. Our website features a wide range of items, all at 
+            a fraction of the original cost. We work with a variety of suppliers to ensure that our customers 
+            receive only the highest quality products, even if they are close to their expiration date. By 
+            purchasing from our website, you can save money and reduce food waste, all while enjoying the same 
+            great taste and quality you expect from fresh products. We believe that everyone deserves access to 
+            affordable, high-quality goods, and we're committed to making that a reality. Whether you're looking
+             for a bargain on your grocery bill or just want to try something new, we've got you covered.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/realtors/creators.jpg'%}" alt="Seller of the month">
+            <div class="card-body">
+              <h5 class="card-title">Developed by</h5>
+              <h6 class="text-secondary">Rishabh sharawat</h6>
+              <h6 class="text-secondary">Kartik gupta</h6>
+              <h6 class="text-secondary">Nitin goyal</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">We Work For You</h2>
+    <h4>Thank You</h4>
+    <hr>
+    <a href="{%url 'listings'%}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+  </section>
+
+{% endblock %}
